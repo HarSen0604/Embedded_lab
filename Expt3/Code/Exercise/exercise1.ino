@@ -1,3 +1,4 @@
+// Identify the Key Stroke and Display it in the serial monitor using Library.
 #include <Keypad.h>
 
 #define ROW_NUM    4
