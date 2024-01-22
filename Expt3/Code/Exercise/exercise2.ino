@@ -1,3 +1,5 @@
+// Identify the Key Stroke and Display it in the serial monitor without using Library.
+
 #define ROW_NUM    4
 #define COLUMN_NUM 3
 
