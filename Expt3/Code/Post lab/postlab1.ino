@@ -40,13 +40,12 @@ void loop() {
         if (inputValue >= 0 && inputValue <= 255) {
           Serial.println("Valid Input: " + String(inputValue));
           
-          // Convert the integer to corresponding ASCII
           char asciiValue = inputValue;
           Serial.println("ASCII Value: " + String(asciiValue));
         } else {
           Serial.println("Invalid Input. Input should be between 0 and 255.");
         }
-        inputBuffer = ""; // Clear the input buffer
+        inputBuffer = "";
       } else {
         Serial.println("Invalid Input. Input is empty.");
       }
