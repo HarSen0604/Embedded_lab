@@ -11,8 +11,8 @@ char keys[ROW_NUM][COLUMN_NUM] = {
   {'*','0','#'}
 };
 
-byte pin_rows[ROW_NUM] = {9, 8, 7, 6};
-byte pin_column[COLUMN_NUM] = {5, 4, 3};
+byte pin_rows[ROW_NUM] = {10, 9, 8, 7};
+byte pin_column[COLUMN_NUM] = {6, 5, 4};
 
 Keypad keypad = Keypad(makeKeymap(keys), pin_rows, pin_column, ROW_NUM, COLUMN_NUM);
 
