@@ -16,14 +16,14 @@ char keys[ROW_NUM][COLUMN_NUM] = {
   {'*','0','#'}
 };
 
-byte pin_rows[ROW_NUM] = {9, 8, 7, 6};
-byte pin_column[COLUMN_NUM] = {5, 4, 3};
-byte ledPin = 13; // Built-in LED on Arduino
+byte pin_rows[ROW_NUM] = {10, 9, 8, 7};
+byte pin_column[COLUMN_NUM] = {6, 5, 4};
+byte ledPin = 13;
 
 void setup() {
   Serial.begin(9600);
   pinMode(ledPin, OUTPUT);
-  digitalWrite(ledPin, LOW); // Initially, LED is in LOW state
+  digitalWrite(ledPin, LOW);
   
   for (byte i = 0; i < ROW_NUM; i++) {
     pinMode(pin_rows[i], INPUT_PULLUP);
@@ -48,9 +48,9 @@ void loop() {
 void blinkLED(int count) {
   for (int i = 0; i < count; i++) {
     digitalWrite(ledPin, HIGH);
-    delay(500); // LED ON time
+    delay(500);
     digitalWrite(ledPin, LOW);
-    delay(500); // LED OFF time
+    delay(500);
   }
 }
 
