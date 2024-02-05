@@ -1,2 +1,2 @@
 # Embedded_lab
-This is a personal repo for my 6th sem embedded lab
+Welcome to my repository dedicated to the Embedded Systems Laboratory for the 6th semester. 
