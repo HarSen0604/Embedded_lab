@@ -15,6 +15,7 @@ void setup() {
 void loop() {
   lcd.setCursor(0, 0);
   for (int positionCounter = 0; positionCounter < 16; positionCounter++) {
+//lcd.scrollDisplayRight() for scrolling the text from left to right
     lcd.scrollDisplayLeft();
     delay(100);
   }
