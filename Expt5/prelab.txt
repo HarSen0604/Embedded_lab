@@ -1,0 +1,23 @@
+1. What is serial programming?
+	* Serial programming refers to the communication between devices using a serial protocol, where data is transmitted sequentially bit by bit. 
+	* It is a method of data transfer that involves sending data one bit at a time over a communication channel.
+
+2. What are the pins used for serial programming in arduino.
+	* The pins used for serial programming in Arduino are typically digital pins 0 (RX) and 1 (TX). 
+	* These pins are associated with the built-in UART (Universal Asynchronous Receiver-Transmitter) communication module on the Arduino board.
+
+3. List out the inbuilt functions used for serial programming.
+	* `Serial.begin(baudRate)`: Initializes the serial communication with the specified baud rate.
+	* `Serial.print(data)`: Sends data (numbers, characters, etc.) to the serial port for transmission.
+	* `Serial.println(data)`: Similar to Serial.print, but adds a newline character at the end.
+	* `Serial.available()`: Returns the number of bytes available for reading from the serial buffer.
+	* `Serial.read()`: Reads the incoming byte from the serial buffer.
+
+4. How will you set the speed between the sender and receiver in serial programming?
+	* The speed between the sender and receiver in serial programming is set by configuring the baud rate using the `Serial.begin(baudRate)` function in Arduino. 
+	* Both the sender and receiver must be set to the same baud rate to ensure proper communication.
+
+5. What is baud rate? What are the standard baud rates used?
+	* Baud rate refers to the speed at which data is transmitted over a communication channel and is measured in bits per second (bps). 
+	* Standard baud rates commonly used include 9600, 19200, 38400, 57600, and 115200 bps. 
+	* Both the sender and receiver must be configured with the same baud rate for successful communication.
